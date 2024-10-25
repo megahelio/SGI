@@ -1,6 +1,6 @@
 /*************************************************************************/
 /*                                                                       */
-/*   examinar.h                                                          */
+/*   examinar.c                                                          */
 /*   Rev. 3.0  01/09/2012   Universidad Jaume I de Castellón             */
 /*                                                                       */
 /*************************************************************************/
@@ -28,9 +28,5 @@ void IniciaFuncionesCallback (void);
 
 /* Define las acciones tras una pulsacion del teclado */
 void Teclado (unsigned char tecla, int x, int y);
-
-/* Define las acciones tras una pulsacion del teclado ampliado */
-void TecladoAmpliado (int tecla, int x, int y);
-void IniciaCuadricas(void);
 
 #endif

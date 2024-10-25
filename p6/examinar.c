@@ -10,6 +10,7 @@
 #include <stdio.h>
 #include "examinar.h"
 #include "glig.h"
+#include "modelado.h"
 
 
 /******************************************************************************************/
@@ -131,29 +132,12 @@ void Dibuja (void)
 	glRotated (beta, 1.0,0.0,0.0);
     glRotated (-alfa, 0.0,1.0,0.0);
 
-	/* Objetos */
-	//glutWireTeapot (1.0);
-	//glutWireOctahedron();
-	//igCreateQuadricObject(400, 400, 1.0, 1.0, 1.0, 1.0, 1.0);
-	//igCreateQuadricObject(1.0, 1.0, 1.0);
-	//igWireDado(10, 10);
-	//igWireCubo();ç
-	glCallList(cuadrica);
+	/* Llamadas a las display lists */
+	glCallList (escalera);
 
 	glFlush();
 }
 
-void IniciaCuadricas(void)
-{
-	cuadrica = glGenLists(1);
-	if (cuadrica != 0) /* Cero no es un identificador valido para una display list */
-	{
-		glNewList(cuadrica, GL_COMPILE);
-		igWireSphere(10, 10);
-		glEndList();
-	}
-
-}
 
 /******************************************************************************************/
 /* Funcion principal                                                                      */
@@ -169,8 +153,9 @@ int main(int numArgumentos, char ** listaArgumentos)
 	/* Rutinas para el control de eventos */
     IniciaFuncionesCallback ();
 
-	IniciaCuadricas();
-
+	/* Crea las display list de cada cuadrica */
+	IniciaDisplayLists ();
+	
 	/* A la espera de eventos.... */
 	glutMainLoop();
 

@@ -202,3 +202,6 @@ void igWireCubo(void) {
 	glEnd();
 
 }
+void igWireCone(int pu, int pv) {
+	igCreateQuadricObject(pu, pv, 1.0, 0.5, 1.0, 2.0, 1.0);
+}	 /* s1= 2.0, s2= 1.0, uMax= 1.0, vMax= 0.5 */
