@@ -168,7 +168,10 @@ void igWireDado(int pu, int pv) {
 void igWireSemiSphere(int pu, int pv) {
 	igCreateQuadricObject(pu, pv, 1.0, 0.5, 1.0, 1.0, 1.0);
 }	/* s1 y s2 a 1, uMax= 1, vMax= 0.5 */
-void igWireCubo(void) {
+void igWireCone(int pu, int pv) {
+	igCreateQuadricObject(pu, pv, 1.0f, 0.5f, 1.0f, 2.0f, 1.0f);
+}
+void igWireCube(void) {
 	float u = 0.5;
 	float p0[3] = { u, u, u },
 		p1[3] = { u, -u, u },

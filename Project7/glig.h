@@ -27,6 +27,6 @@ void igWireSphere(int pu, int pv); /* s1 y s2 a 1 */
 void igWireRulo(int pu, int pv); /* s1= 0.5, s2= 1 */
 void igWireDado(int pu, int pv); /* s1= 0.5, s2 =0.5 */
 void igWireSemiSphere(int pu, int pv); /* s1 y s2 a 1, uMax= 1, vMax= 0.5 */
-void igWireCubo(void);
+void igWireCube(void);
 void igWireCone(int pu, int pv);
 #endif
