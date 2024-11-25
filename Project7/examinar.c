@@ -26,7 +26,7 @@ void TamanyoVentana (GLsizei ancho, GLsizei alto)
 	glViewport(0, 0, ancho, alto);  
 
     /* Definicion de la vista */
-    glMatrixMode(GL_PROJECTION);
+	glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
     //glOrtho(-10.0, 10.0, -10.0*(GLfloat)alto/(GLfloat)ancho, 10.0*(GLdouble)alto/(GLfloat)ancho, -20.0, 20.0);
 	gluPerspective (60.0, (GLdouble)alto/(GLdouble)ancho, 1.0, 50.0);
@@ -82,6 +82,41 @@ void Teclado (unsigned char tecla, int x, int y)
 			modo = FLY;
 			printf ("Modo = FLY      \r");
 			break;
+
+
+		//case 'o':
+		//	if (modo == FLY) {
+		//		beta = beta + 1.50;
+		//		if (beta > 360.0) beta = beta - 360.0;
+		//		iy = oy + PASO * sin(grad2rad(beta));
+		//	}
+		//	break;
+		//case 'l':
+		//	if (modo == FLY) {
+		//		beta = beta - 1.50;
+		//		if (beta < 0.0) beta = beta + 360.0;
+		//		iy = oy + PASO * sin(grad2rad(beta));
+		//	}
+		//	break;
+		//case 'a': // Pulsacion cursor izquierda del teclado ampliado
+		//	alfa = alfa - 15.0;
+		//	if (alfa < 0.0) alfa = alfa + 360.0;
+
+		//	if (modo == EXAMINAR) {
+		//		ix = ox + PASO * sin(grad2rad(alfa));
+		//		iz = oz - PASO * cos(grad2rad(alfa));
+		//	}
+		//	if (modo == WALK) {
+
+		//		ix = ox + PASO * sin(grad2rad(alfa));
+		//		iz = oz - PASO * cos(grad2rad(alfa));
+		//	}
+		//	if (modo == FLY) {
+		//		ix = ox + PASO * sin(grad2rad(alfa));
+		//		iy = oy;
+		//		iz = oz - PASO * cos(grad2rad(alfa));
+		//	}
+		//	break;
 	}
 }
 
@@ -160,8 +195,7 @@ void TecladoAmpliado (int tecla, int x, int y)
 				iz = oz - PASO * cos(grad2rad(alfa));
 			}
 			break;
-
-		case GLUT_KEY_LEFT : // Pulsacion cursor izquierda del teclado ampliado
+		case GLUT_KEY_LEFT: // Pulsacion cursor izquierda del teclado ampliado
 			alfa = alfa - 15.0;
 			if (alfa < 0.0) alfa = alfa + 360.0;
 			
@@ -180,6 +214,7 @@ void TecladoAmpliado (int tecla, int x, int y)
 				iz = oz - PASO * cos(grad2rad(alfa));
 			}
 			break;
+		
 	}
 	glutPostRedisplay ();
 }
