@@ -8,7 +8,7 @@ Este repositorio recoge las prácticas y proyectos desarrollados a lo largo del 
 
   - Prácticas y proyectos: Ejercicios individuales sobre temas como transformaciones, iluminación o proyecciones.
 
-  - Proyecto: Desarrollo de escenas 3D completas con interacción en unity.
+  - Proyecto: Desarrollo de escenas 3D completas con interacción.
 
   - Recursos: Documentación, esquemas y material de apoyo.
 
