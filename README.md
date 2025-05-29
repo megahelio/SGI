@@ -6,9 +6,9 @@ Repositorio para la asignatura de Sistemas Gráficos por Computador (SGI) del M�
 Este repositorio recoge las prácticas y proyectos desarrollados a lo largo del curso, centrados en el modelado 3D, renderizado en tiempo real y técnicas fundamentales de gráficos por computador.
 ## 📁 Contenido
 
-  - Prácticas: Ejercicios individuales sobre temas como transformaciones, iluminación o proyecciones.
+  - Prácticas y proyectos: Ejercicios individuales sobre temas como transformaciones, iluminación o proyecciones.
 
-  - Proyectos: Desarrollo de escenas 3D completas con interacción.
+  - Proyecto: Desarrollo de escenas 3D completas con interacción en unity.
 
   - Recursos: Documentación, esquemas y material de apoyo.
 
